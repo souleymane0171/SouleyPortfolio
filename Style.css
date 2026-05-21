@@ -1,0 +1,350 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#020412;
+    color:white;
+}
+
+/* BACKGROUND ETOILES */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url("https://www.transparenttextures.com/patterns/stardust.png");
+    z-index:-1500;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(5px);
+    position:absolute;
+    width:100%;
+}
+
+nav a{
+    position: static;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo{
+    color:#7f5cff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#7f5cff;
+}
+
+/* HOME */
+
+.home{
+    height:25vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.home h2{
+    font-size:70px;
+    color:#7f5cff;
+}
+
+.home h3{
+    font-size:35px;
+    margin-top:10px;
+}
+
+.description{
+    margin-top:20px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 30px;
+    background:#7f5cff;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#7f5cff;
+}
+
+/* ABOUT */
+
+.about p{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    line-height:30px;
+}
+
+/* SKILLS */
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#0b1023;
+    padding:40px;
+    border-radius:20px;
+    width:200px;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:60px;
+    margin-bottom:20px;
+    color:#7f5cff;
+}
+
+/* PROJECTS */
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    background:#0b1023;
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+.project-card h3{
+    margin-bottom:20px;
+    color:#7f5cff;
+}
+
+/* FORMATION */
+
+.formation-box{
+    background:#0b1023;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    line-height:40px;
+}
+
+/* CONTACT */
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    margin-bottom:20px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#0b1023;
+    color:white;
+}
+
+form textarea{
+    height:150px;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#7f5cff;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    transform:scale(1.05);
+}
+
+.hero{
+    display: list-item;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    min-height: 10vh;
+    padding: 50px;
+}
+
+.hero-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00ffff;
+    box-shadow: 0 0 40px #00ffff;
+}
+
+.hero-right{
+    flex: 1;
+    color: white;
+}
+
+.hero-right h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-right h2{
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.hero-right p{
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.contact-links{
+    margin-top: 30px;
+    margin-left: 650px;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-links a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover{
+    background: #00ffff;
+    color: black;
+}
+
+#parcours{
+    padding: 100px 20px;
+    color: white;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.timeline{
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #00ffff;
+    transform: translateX(-50%);
+}
+
+.timeline-item{
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd){
+    left: 50;
+}
+
+.timeline-item:nth-child(even){
+    left: 50%;
+}
+
+.timeline-content{
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+}
+
+.timeline-content h3{
+    color: #00ffff;
+}
